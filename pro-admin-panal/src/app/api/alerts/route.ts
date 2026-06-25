@@ -1,0 +1,1 @@
+import { getAlerts } from "@/lib/adapters/alert-adapter"; export async function GET() { return Response.json({ data: await getAlerts() }); }

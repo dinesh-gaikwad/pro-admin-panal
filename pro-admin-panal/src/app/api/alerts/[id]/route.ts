@@ -1,0 +1,1 @@
+import { getAlertById } from "@/lib/adapters/alert-adapter"; export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const alert = await getAlertById(id); if (!alert) return Response.json({ error: "Not found" }, { status: 404 }); return Response.json({ data: alert }); }

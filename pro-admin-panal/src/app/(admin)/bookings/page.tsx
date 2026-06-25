@@ -1,0 +1,1 @@
+export default function BookingsPage() { return <div className="card p-8"><h1 className="text-3xl font-bold">Bookings</h1></div>; }

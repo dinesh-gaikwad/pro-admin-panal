@@ -1,0 +1,1 @@
+import { getFerryById } from "@/lib/adapters/ferry-adapter"; export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const ferry = await getFerryById(id); if (!ferry) return Response.json({ error: "Not found" }, { status: 404 }); return Response.json({ data: ferry }); }

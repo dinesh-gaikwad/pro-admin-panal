@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root { --bg:#08101d; --text:#eaf0ff; --border:rgba(255,255,255,.08); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:linear-gradient(180deg,#08101d 0%, #0b1220 100%);
+  color:var(--text);
+  font-family:Inter, system-ui, sans-serif;
+}
+a { color:inherit; text-decoration:none; }
+.container-pfr { width:min(1200px, calc(100% - 2rem)); margin-inline:auto; }
+.card {
+  background:rgba(16,26,47,.82);
+  border:1px solid var(--border);
+  border-radius:20px;
+  backdrop-filter:blur(16px);
+}

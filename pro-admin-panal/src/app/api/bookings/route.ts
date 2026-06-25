@@ -1,0 +1,1 @@
+import { getBookings } from "@/lib/adapters/booking-adapter"; export async function GET() { return Response.json({ data: await getBookings() }); }

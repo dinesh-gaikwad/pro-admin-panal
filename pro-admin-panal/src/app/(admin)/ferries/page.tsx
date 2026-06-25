@@ -1,0 +1,1 @@
+export default function FerriesPage() { return <div className="card p-8"><h1 className="text-3xl font-bold">Ferries</h1></div>; }

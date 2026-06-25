@@ -1,0 +1,1 @@
+export default function StatusPage() { return <section className="container-pfr py-12"><div className="card p-8"><h1 className="text-3xl font-bold">Status</h1></div></section>; }

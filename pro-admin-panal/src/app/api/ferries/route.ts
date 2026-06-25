@@ -1,0 +1,1 @@
+import { getFerries } from "@/lib/adapters/ferry-adapter"; export async function GET() { return Response.json({ data: await getFerries() }); }

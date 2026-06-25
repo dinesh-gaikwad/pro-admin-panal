@@ -1,0 +1,1 @@
+import { getBookingById } from "@/lib/adapters/booking-adapter"; export async function GET(_: Request, { params }: { params: Promise<{ id: string }> }) { const { id } = await params; const booking = await getBookingById(id); if (!booking) return Response.json({ error: "Not found" }, { status: 404 }); return Response.json({ data: booking }); }
